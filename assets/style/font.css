@@ -1,0 +1,99 @@
+/* ---------------------- FONT ---------------------- */
+/* POPPINS */
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 900;
+    src: local('Poppins'), url('../fonts/Poppins/woff2/Poppins-Black.woff2') format('woff2');
+    font-display: optional;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 800;
+    src: local('Poppins'), url('../fonts/Poppins/woff2/Poppins-ExtraBold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    src: local('Poppins'), url('../fonts/Poppins/woff2/Poppins-Bold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    src: local('Poppins'), url('../fonts/Poppins/woff2/Poppins-Medium.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: local('Poppins'), url('../fonts/Poppins/woff2/Poppins-Regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 200;
+    src: local('Poppins'), url('../fonts/Poppins/woff2/Poppins-Light.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 100;
+    src: local('Poppins'), url('../fonts/Poppins/woff2/Poppins-ExtraLight.woff2') format('woff2');
+  }
+  
+  /* IBM Plex SANS */
+  @font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 800;
+    src: local('IBMPlexSans'), url('../fonts/IBMPlexSans/IBMPlexSans-SemiBold.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 700;
+    src: local('IBMPlexSans'), url('../fonts/IBMPlexSans/IBMPlexSans-Bold.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 500;
+    src: local('IBMPlexSans'), url('../fonts/IBMPlexSans/IBMPlexSans-Medium.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 400;
+    src: local('IBMPlexSans'), url('../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 200;
+    src: local('IBMPlexSans'), url('../fonts/IBMPlexSans/IBMPlexSans-Light.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexSans';
+    font-weight: 100;
+    src: local('IBMPlexSans'), url('../fonts/IBMPlexSans/IBMPlexSans-ExtraLight.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'PublicSans';
+    src: url('../fonts/PublicSans-VariableFont_wght.ttf') format('woff2-variations');
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: normal;
+  }
+  
+  /* ITALIC */
+  @font-face {
+    font-family: 'PublicSans-Italic';
+    src: url('../fonts/PublicSans-Italic-VariableFont_wght.ttf') format('woff2-variations');
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: italic;
+  }

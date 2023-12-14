@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Cybersecurity</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./_assets/none" id="theme" />
+    <link rel="stylesheet" href="./assets/style/font.css" id="theme" />
+    <link rel="stylesheet" href="./assets/style/style.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
+
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+<!-- ========================================================  -->
+<!-- HOMEPAGE -->
+<!-- ========================================================  -->
+<!-- .slide: data-background="var(--primary-background-color)" class="flexbox" data-auto-animate data-state="make-it-pop" -->
+
+<div>
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo" data-id="logo" -->
+
+### DEEP DIVE INTO CYBERSECURITY
+<!-- .element: class="end-align intro-description" data-id="intro-description" -->
+
+<span/><!-- .element: class="line" -->
+
+## Cybersecurity Ecosystem
+<!-- .element: class="intro-presentation-title start-align" -->
+
+##### Actors: Roles and Missions
+<!-- .element: class="start-align" -->
+
+
+Helene & Lucas
+<!-- .element: class="start-align margin-top-bonus" -->
+
+22.11.2023
+<!-- .element: class="start-align" -->
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus"-->
+
+<div>
+
+![open crisis image](./media/openriskmanager_simple.svg) <!-- .element: class="resize margin-left-bonus orisk" -->
+
+![Wave 01](./media/groupwave01.svg)<!-- .element: class="wave-01" -->
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus" -->
+
+<aside class="notes"><p>Bienvenue à tous, </p>
+<p>Pour cette présentation, je vais vous parler de l&#39;écosystème dans le secteur de la cybersécurité qui est un des grands chapitres que nous avions définis avec Lucas.</p>
+<p>J&#39;attaque aujourd&#39;hui le sujet en vous parlant de la cybersécurité opérationnelle et plus précisément des acteurs, des différentes équipes qui sont sur le terrain, leurs rôles et leurs missions.</p>
+<!-- ========================================================  -->
+<!-- SECTION -->
+<!-- ========================================================  --></aside></script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01" data-id="dots-decoration" -->
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+
+### DEEP DIVE INTO CYBERSECURITY
+<!-- .element: class="end-align intro-description" data-id="intro-description" -->
+<span/><!-- .element: class="line" -->
+
+
+# Table of contents<!-- .element: class="start-align" -->
+
+### Operational Cybersecurity
+<!-- .element: class="intro-presentation-title start-align" -->
+
+##### Actors: Roles and Missions
+<!-- .element: class="start-align" -->
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus " -->
+
+<div>
+
+1. Introduction
+<!-- .element: class="fragment custom blur" data-fragment-index="1" -->
+1. CERT / CSIRT Analysts
+<!-- .element: class="fragment custom blur" data-fragment-index="2" -->
+1. SOC Analysts
+<!-- .element: class="fragment custom blur" data-fragment-index="3" -->
+1. DFIR Team
+<!-- .element: class="fragment custom blur" data-fragment-index="4" -->
+1. Cyber Threat Intelligence (CTI) Team
+<!-- .element: class="fragment custom blur" data-fragment-index="5" -->
+1. Penetration Testers / Red Team
+<!-- .element: class="fragment custom blur" data-fragment-index="6" -->
+
+<!-- .element: class="presentation-list margin-top-bonus padding-left-bonus"  -->
+
+</div>
+
+<!-- .element: class="flexbox column margin-top-bonus" -->
+
+<aside class="notes"><p>Pour commencer, voilà ce que nous allons aborder aujourd&#39;hui:</p>
+<ul>
+<li>un point d&#39;introduction sur ce à quoi nous allons répondre</li>
+<li>les CERT/ CSIRT Analystes</li>
+<li>qui sont les SOC Analystes</li>
+<li>les équipes DFIR</li>
+<li>la CTI team (ça, normalement la plupart connaît)</li>
+<li>les Pentesters et les red team</li>
+</ul>
+<p>Oui, je vois vos têtes, c&#39;est plein d&#39;acronymes qu&#39;on a jamais vu et on ne sait pas où les situer mais heureusement, la suite va vous aider à comprendre, interro en fin de présentation! </p>
+<p>Je plaisante, pour rappel, après la vidéo, il y aura un résumé et des compléments d&#39;informations sur Notion, donc n&#39;hésitez pas à aller voir</p>
+<!-- ========================================================  -->
+<!-- SECTION -->
+<!-- ========================================================  --></aside></script></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" class="flexbox column" data-auto-animate -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01 zoom-1 " data-id="dots-decoration" -->
+
+
+# 1. Introduction 
+<!-- .element: class="start-align margin-top-bonus-chapter" data-id="chapter-title" -->
+<span/><!-- .element: class="line" -->
+
+<!-- ================ -->
+<!-- SECTION VERTICAL -->
+<!-- ================ -->
+
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+
+### DEEP DIVE INTO CYBERSECURITY
+<!-- .element: class="end-align intro-description" -->
+
+<span/><!-- .element: class="line" -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01" data-id="dots-decoration" -->
+
+# 1. Introduction
+<!-- .element: class="start-align highlight-title" data-id="chapter-title" -->
+
+
+##### What this presentation will cover ?
+<!-- .element: class="start-align line-height-bonus" -->
+
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus " -->
+
+<div>
+
+##### Actors: Roles and Missions
+<!-- .element: class="start-align " -->
+
+
+- Decoding Acronyms  
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="1" -->
+- Overview of common Cybersecurity Team Analysts
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="2" -->
+- Mission and Objectives of Cybersecurity Teams
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="3" -->
+- Overview of common Cybersecurity Team Structure
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="4" -->
+
+<!-- .element: class="margin-top-bonus"-->
+
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus padding-left-bonus" -->
+
+
+<aside class="notes"><p>Les prochaines slides vont nous permettre de:</p>
+<ul>
+<li>décoder les acronymes</li>
+<li>vous donner un aperçu équipes les plus connus et reconnues au sein d&#39;une organisation</li>
+<li>leur missions et objectifs au sein de l&#39;équipe cyber</li>
+<li>et avoir un aperçu global, comment ils agissent collectivement</li>
+</ul>
+<p>Pour ce dernier point, l&#39;organisation dépend aussi beaucoup de la taille de l&#39;équipe
+Plus l&#39;équipe sera grande et plus elle pourra se spécialiser et avoir différents rôles.
+Le deuxième point d&#39;attention sur l&#39;organisation est que cela dépend de la stratégie adoptée pour la cybersécurité, le choix d&#39;un tel modèle ou d&#39;un autre dépendra de la manière dont on souhaite structurer son équipe</p>
+<p>Donc on va explorer tout ça!</p>
+<!-- ========================================================  -->
+<!-- SECTION-->
+<!-- ========================================================  --></aside></script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" class="flexbox column" data-auto-animate -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01 move-down zoom-3" data-id="dots-decoration" -->
+
+# 2. CERT / CSIRT Analysts
+
+<!-- .element: class="start-align margin-top-bonus-chapter"-->
+
+<span/><!-- .element: class="line" -->
+
+<!-- ================ -->
+<!-- SECTION VERTICAL -->
+<!-- ================ -->
+
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+
+### DEEP DIVE INTO CYBERSECURITY
+<!-- .element: class="end-align intro-description" -->
+
+<span/><!-- .element: class="line" -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01" data-id="dots-decoration" -->
+
+# 2. CERT / CSIRT Analysts
+<!-- .element: class="start-align highlight-title" data-id="chapter-title" -->
+
+#### C.E.R.T.
+<!-- .element: class="intro-presentation-title start-align" -->
+
+Computer Emergency Response Team
+<!-- .element: class="start-align line-height-bonus" -->
+
+#### C.S.I.R.T.
+<!-- .element: class="intro-presentation-title start-align" -->
+
+Computer Security and Incident Response Team
+<!-- .element: class="start-align line-height-bonus" -->
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus " -->
+
+<div>
+
+##### Roles
+<!-- .element: class="start-align " -->
+
+
+- Manages information security incidents  
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="1" -->
+- Threat hunting
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="2" -->
+- Incident response coordination
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="3" -->
+- Responders in the event of a cyberattack
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="4" -->
+
+<!-- .element: class=""-->
+
+##### Missions
+<!-- .element: class="start-align " -->
+
+- Contain computer security incidents  
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="5" -->
+- Minimize their impact on the organization’s operations and reputation
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="6" -->
+- Facilitate post-crisis remediation and reconstruction
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="7" -->
+- Pro-active threat monitoring
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="7" -->
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus padding-left-bonus" -->
+
+<aside class="notes"><p>CERT pour Computer Emergency Response Team
+CSIRT pour Computer Security and incident Response Team</p>
+<p>Il y a principalement 2 grandes équipes en fonction de la stratégie qu&#39;une organisation va choisir: CERT/CSIRT ou SOC qu&#39;on verra toute à l&#39;heure</p>
+<p>Les rôles clés que vont avoir les personnes ce cette équipe est de:</p>
+<ul>
+<li>Gérer les incidents liés à la sécurité de l&#39;information</li>
+<li>Recherche et identifie les menaces</li>
+<li>le CERT joue un role clé dans la coordination des réponses aux incidents</li>
+<li>Il est le point de contact lorsqu&#39;un incident est détecté, ce sont eux qui interviennent</li>
+</ul>
+<p>Leur missions sont les suivantes:</p>
+<ul>
+<li>Contenir les incidents de sécurité informatique </li>
+<li>Sa mission essentielle est de minimiser et contrôler les dommages d&#39;un incident en fournissant une réponse rapide et efficace pour minimiser leur impact sur les opérations et la réputation de l&#39;organisation</li>
+<li>Une de ses missions est aussi de faciliter la remédiation et la restauration des services après une violation</li>
+<li>Et également d&#39;analyser et surveiller de manière pro active les menaces</li>
+</ul>
+<p>(Veille sur les menaces, va voir s&#39;il y a de nouvelles attaques, voir si ce qu&#39;ils ont trouvés peuvent impacter également leur périmètres
+CERT est une marque déposée)</p>
+<!-- ========================================================  -->
+<!-- SECTION -->
+<!-- ========================================================  --></aside></script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" class="flexbox column" data-auto-animate -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01 move-left  zoom-2" data-id="dots-decoration" -->
+
+# 3. SOC Analysts
+
+<!-- .element: class="start-align margin-top-bonus-chapter"-->
+
+<span/><!-- .element: class="line" -->
+
+<!-- ================ -->
+<!-- SECTION VERTICAL -->
+<!-- ================ -->
+
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+
+### DEEP DIVE INTO CYBERSECURITY
+<!-- .element: class="end-align intro-description" -->
+
+<span/><!-- .element: class="line" -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01" data-id="dots-decoration" -->
+
+# 3. SOC Analysts
+<!-- .element: class="start-align highlight-title" data-id="chapter-title" -->
+
+#### S.O.C.
+<!-- .element: class="intro-presentation-title start-align" -->
+
+Security Operations Center
+<!-- .element: class="start-align line-height-bonus" -->
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus " -->
+
+<div>
+
+##### Roles
+<!-- .element: class="start-align " -->
+
+
+- Responsible for continuously monitoring an organization's infrastructure
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="1" -->
+- Analyze, respond to, and report security alerts
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="2" -->
+- Improve an organization’s detection capabilities
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="3" -->
+
+
+<!-- .element: class=""-->
+
+##### Missions
+<!-- .element: class="start-align " -->
+
+- Evaluate and alert to any suspicious or abnormal activity 
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="4" -->
+- Network monitoring to provide complete visibility into digital activity and better detect anomalies
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="5" -->
+- Ensuring the business is protected from attack
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="6" -->
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus padding-left-bonus" -->
+
+<aside class="notes"><p>SOC pour Security Operations Center
+Il s&#39;agit de la 2e grande équipe lorsqu&#39;on choisit une stratégie pour structurer son équipe cyber (l&#39;autre étant celle qu&#39;on vient d&#39;évoquer)</p>
+<p>Ils sont en charge de:</p>
+<ul>
+<li>surveiller en permanence les infrastructures d&#39;une organisation</li>
+<li>d&#39;analyser les alertes de sécurité, y répondre et les signaler</li>
+<li>et d&#39;améliorer les capacités de détection de l&#39;organisation afin de mieux cibler sa surveillance</li>
+</ul>
+<p>Ses missions sont les suivantes:</p>
+<ul>
+<li>Evaluer et donner l&#39;alerte en cas d&#39;activité supecte ou anormale</li>
+<li>Fournir une visibilité complète de l&#39;activité numérique sur le réseau et systèmes pour mieux détecter les anomalies</li>
+<li>Garantir la protection de l&#39;entreprise contre les attaques</li>
+</ul>
+<p>Lorsque l&#39;organisation a les moyens de faire grandir la structure pour la cybersécurité, certaines équipes peuvent se spécialiser</p>
+<p>La suite de la présentation vont vous présenter certains rôles plus spécifiques qui peuvent faire partie de ces principaux équipes SOC ou CERT</p>
+<!-- ========================================================  -->
+<!-- SECTION -->
+<!-- ========================================================  --></aside></script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" class="flexbox column" data-auto-animate -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01 move-right zoom-1" data-id="dots-decoration" -->
+
+# 4. DFIR Team
+
+<!-- .element: class="start-align margin-top-bonus-chapter"-->
+
+<span/><!-- .element: class="line" -->
+
+
+<!-- ================ -->
+<!-- SECTION VERTICAL -->
+<!-- ================ -->
+
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+
+### DEEP DIVE INTO CYBERSECURITY
+<!-- .element: class="end-align intro-description" -->
+
+<span/><!-- .element: class="line" -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01" data-id="dots-decoration" -->
+
+# 4. DFIR Team
+<!-- .element: class="start-align highlight-title" data-id="chapter-title" -->
+
+
+#### D.F.I.R.
+<!-- .element: class="intro-presentation-title start-align" -->
+
+Digital Forensics and Incident Response
+<!-- .element: class="start-align line-height-bonus" -->
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus " -->
+
+<div>
+
+##### Roles
+<!-- .element: class="start-align " -->
+
+
+- Identifying, acquiring, and analyzing electronic evidence
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="1" -->
+- Understand what happened
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="2" -->
+- Provides a deep understanding of cybersecurity incidents
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="3" -->
+
+<!-- .element: class=""-->
+
+##### Missions
+<!-- .element: class="start-align " -->
+
+- Detect, investigate, and respond to cyber threats facing an organization
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="4" -->
+- Detect and mitigate cyberattacks
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="5" -->
+- Help identify the data lost or exact damage caused
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="6" -->
+- Gather and investigate vast amounts of data to fill in gaps of information about cyber attacks
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="7" -->
+
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus padding-left-bonus" -->
+
+<aside class="notes"><p>DFIR pour Digital Forensics and Incident Response</p>
+<p>Digital Forensics c&#39;est tout ce qu&#39;on peut identifier, acquérir ou analyser par des preuves numériques, électroniques</p>
+<p>Ses principaux roles sont:</p>
+<ul>
+<li>Justement d&#39;identifier, acquérir ou analyser par des preuves numériques, électroniques</li>
+<li>Comprendre ce qu&#39;il s&#39;est passé lors d&#39;un incident</li>
+<li>Comprendre en profondeur les incidents</li>
+</ul>
+<p>Leurs missions sont:
+-Détecter les cybermenaces auxquelles une organisation est confrontée, enquêter sur ces menaces et y répondre</p>
+<ul>
+<li>Détecter et atténuer les cyberattaques</li>
+<li>En cas de violation réussie, DFIR peut également aider à identifier les données perdues ou les dommages exacts causés</li>
+<li>Recueillir et étudier de grandes quantités de données afin de combler les lacunes en matière d&#39;informations sur les cyberattaques</li>
+</ul>
+<!-- ========================================================  -->
+<!-- SECTION -->
+<!-- ========================================================  --></aside></script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" class="flexbox column" data-auto-animate -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01 move-down zoom-3" data-id="dots-decoration" -->
+
+# 5. CTI Team
+
+<!-- .element: class="start-align margin-top-bonus-chapter"-->
+
+<span/><!-- .element: class="line" -->
+
+
+<!-- ================ -->
+<!-- SECTION VERTICAL -->
+<!-- ================ -->
+
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+
+### DEEP DIVE INTO CYBERSECURITY
+<!-- .element: class="end-align intro-description" -->
+
+<span/><!-- .element: class="line" -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01" data-id="dots-decoration" -->
+
+# 5. CTI Team
+<!-- .element: class="start-align highlight-title" data-id="chapter-title" -->
+
+#### C.T.I.
+<!-- .element: class="intro-presentation-title start-align" -->
+
+Cyber Threat Intelligence
+<!-- .element: class="start-align line-height-bonus" -->
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus " -->
+
+<div>
+
+##### Roles
+<!-- .element: class="start-align " -->
+
+
+- Understand and constantly analyse the threat landscape  
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="1" -->
+- Support DFIR and Red Team 
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="2" -->
+- Help organizations defend against sophisticated, organized cyber attacks
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="3" -->
+
+<!-- .element: class=""-->
+
+##### Missions
+<!-- .element: class="start-align " -->
+
+- Give context about the threat actors operating in the environment
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="4" -->
+- Provides data that can be used to detect, block and mitigate threats
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="5" -->
+- Provides data to understand the threats and the tactics, techniques, and procedures (TTP) 
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="6" -->
+
+
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus padding-left-bonus" -->
+
+<aside class="notes"><p>CTI pour Cyber Threat Intelligence</p>
+<p>La CTI team va pouvoir donner les ressources nécessaires aux autres équipes</p>
+<p>Leurs roles est de:</p>
+<ul>
+<li>Comprendre et analyser en permanence les menaces</li>
+<li>Soutenir la DFIR et la Red Team: Augmenter l&#39;efficatité et rapidite response a incident (pour DFIR) et ameliorer la pertinence des tests et scénarios</li>
+<li>Aider les organisations à se défendre contre les cyberattaques sophistiquées et organisées</li>
+</ul>
+<p>Leurs Missions a eux:</p>
+<ul>
+<li>Fournir un contexte sur les acteurs de la menace opérant dans l&#39;environnement</li>
+<li>Fournir des données qui peuvent être utilisées pour détecter, bloquer et atténuer les menaces</li>
+<li>Fournir des données permettant de comprendre les menaces et les tactiques, techniques et procédures (TTP)</li>
+</ul>
+<p>En partageant leurs analyses des comportements des cybercriminels et des modes opératoires, les équipes de CTI améliorent leurs connaissances des cybermenaces pour renforcer leurs capacités de détection, anticiper les nouveaux risques et lutter collectivement contre les cyberattaques</p>
+<!-- ========================================================  -->
+<!-- SECTION -->
+<!-- ========================================================  --></aside></script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" class="flexbox column" data-auto-animate -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01 move-right zoom-2" data-id="dots-decoration" -->
+
+# 6. Penetration Testing and Red Team
+
+<!-- .element: class="start-align margin-top-bonus-chapter"-->
+
+<span/><!-- .element: class="line" -->
+
+
+<!-- ================ -->
+<!-- SECTION VERTICAL -->
+<!-- ================ -->
+
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+
+### DEEP DIVE INTO CYBERSECURITY
+<!-- .element: class="end-align intro-description" -->
+
+<span/><!-- .element: class="line" -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01" data-id="dots-decoration" -->
+
+# 6. Penetration Testers and Red Team
+<!-- .element: class="start-align highlight-title" data-id="chapter-title" -->
+
+
+##### Penetration Testers
+<!-- .element: class="start-align line-height-bonus" -->
+
+##### Red Teamers
+<!-- .element: class="start-align line-height-bonus" -->
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus " -->
+
+<div>
+
+##### Roles
+<!-- .element: class="start-align " -->
+
+- Simulate attack to evaluate infrastructure security  
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="1" -->
+- Examine whether a system is robust enough
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="2" -->
+- Plays the role of the attacker by trying to find vulnerabilities and break through cybersecurity defenses
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="3" -->
+
+<!-- .element: class=""-->
+
+##### Missions
+<!-- .element: class="start-align " -->
+
+- Find weaknesses in systems
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="4" -->
+- Find and demonstrate the business impacts of weaknesses in a system
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="5" -->
+- Expose vulnerabilities that adversaries might exploit
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="6" -->
+- Monitor attack surface exposure
+<!-- .element: class="fragment fade-left start-align" data-fragment-index="7" -->
+
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus padding-left-bonus" -->
+
+<aside class="notes"><p>Une des dernières équipes concerne la sécurité offensive
+Les pentesters et les red Team</p>
+<p>Leurs Rôles</p>
+<ul>
+<li>Simuler une attaque pour évaluer la sécurité de l&#39;infrastructure</li>
+<li>Vérifier si un système est suffisamment robuste</li>
+<li>Jouer le rôle de l&#39;attaquant en essayant de trouver des vulnérabilités et de percer les défenses de cybersécurité.
+Missions</li>
+<li>Trouver les faiblesses des systèmes</li>
+<li>Trouver et démontrer l&#39;impact des faiblesses d&#39;un système sur l&#39;activité de l&#39;entreprise</li>
+<li>Exposer les vulnérabilités que les adversaires pourraient exploiter</li>
+<li>Surveiller l&#39;exposition de la surface d&#39;attaque, scanner tout ce qui est exposé a internet pour trouver s&#39;il y a une faille</li>
+</ul>
+<!-- ========================================================  -->
+<!-- SECTION -->
+<!-- ========================================================  --></aside></script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" class="flexbox column" data-auto-animate -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01 move-right zoom-2" data-id="dots-decoration" -->
+
+# Cybersecurity Team Structure Diagram
+
+<!-- .element: class="start-align margin-top-bonus-chapter"-->
+
+<span/><!-- .element: class="line" -->
+
+
+<!-- ================ -->
+<!-- SECTION VERTICAL -->
+<!-- ================ -->
+
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+Diagram
+<!-- .element: class="start-align margin-top-bonus" data-id="chapter-title" -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01" data-id="dots-decoration" -->
+
+
+![Diagram](./media/diagram-1.png)<!-- .element: class="diagram-resize margin-top-minus" data-id="diagram" -->
+
+</div>
+
+<!-- .element: class="flexbox column-full padding-left-bonus" -->
+
+<!-- ================ -->
+<!-- SECTION VERTICAL -->
+<!-- ================ -->
+
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+Diagram
+<!-- .element: class="start-align" data-id="chapter-title margin-top-bonus" -->
+
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01 move-down" data-id="dots-decoration" -->
+
+
+![Diagram](./media/diagram-2.png)<!-- .element: class="diagram margin-top-minus" data-id="diagram" -->
+
+</div>
+
+<!-- .element: class="flexbox column-full margin-top-bonus padding-left-bonus" -->
+
+<!-- ================ -->
+<!-- SECTION VERTICAL -->
+<!-- ================ -->
+
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+Diagram
+<!-- .element: class="start-align" data-id="chapter-title margin-top-bonus" -->
+
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01 move-right" data-id="dots-decoration" -->
+
+
+![Diagram](./media/diagram-3.png)<!-- .element: class="diagram margin-top-minus" data-id="diagram" -->
+
+</div>
+
+<!-- .element: class="flexbox column-full margin-top-bonus padding-left-bonus" -->
+
+<!-- ================ -->
+<!-- SECTION VERTICAL -->
+<!-- ================ -->
+
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--tertiary-background-color)" data-auto-animate class="flexbox" -->
+
+
+![logo](./media/filigran_text.svg)<!-- .element: class="logo_small" data-id="logo" -->
+
+<div>
+
+Diagram
+<!-- .element: class="start-align" data-id="chapter-title margin-top-bonus" -->
+
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01" data-id="dots-decoration" -->
+
+
+![Diagram](./media/diagram-4.png)<!-- .element: class="diagram margin-top-minus" data-id="diagram" -->
+
+</div>
+
+<!-- .element: class="flexbox column-full margin-top-bonus padding-left-bonus" -->
+
+<!-- ========================================================  -->
+<!-- SECTION-->
+<!-- ========================================================  -->
+</script></section></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="var(--primary-background-color)" data-auto-animate -->
+
+![Dots decoration](./media/round-dots.svg)<!-- .element: class="dots-01 move-right zoom-3" data-id="dots-decoration" -->
+
+<div>
+
+# Thank you
+
+### Questions ?
+
+</div>
+<!-- .element: class="flexbox column margin-top-bonus" --></script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        slideNumber: true,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"slide","slideNumber":"c/t","pdfSeparateFragments":false}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

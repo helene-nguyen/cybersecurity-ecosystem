@@ -1,0 +1,432 @@
+:root {
+  --font-ibm: 'IBMPlexSans';
+  --font-poppins: 'Poppins';
+
+  --primary-color: #FFFFFF;
+  --secondary-color: #00B1FF;
+  --ternary-color: #24507B;
+  --extra-color-01: #9C27B0;
+  --extra-color-02: #EC407A;
+  --extra-color-03: #FFB74D;
+  --extra-color-04: #96F426;
+
+  --grey-01: #D9D9D9;
+
+  --primary-background-color: #001E3C;
+  --secondary-background-color: #001E3C;
+  --tertiary-background-color: #001E3C;
+}
+
+/* ------------------ MAIN ASSETS ------------------ */
+body {
+  font-family: var(--font-poppins), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  color: var(--primary-color);
+  padding: 0 0 1rem 0;
+  font-weight: 600;
+  word-wrap: break-word;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 0 0 2rem 0;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 0 0 2rem 0;
+  line-height: normal;
+  color: var(--grey-01);
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: normal;
+  color: var(--grey-01);
+}
+
+
+h4 {
+  color: var(--grey-01);
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+td,
+td {
+  text-align: start;
+  padding: 0.2rem !important;
+}
+
+p {
+  color: var(--primary-color);
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+}
+
+ul,
+ol {
+  display: inline-block;
+  margin: 0 0 0 1em;
+}
+
+li::marker,
+a {
+  color: var(--secondary-color);
+}
+
+li {
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.font-italic {
+  font-family: 'PublicSans-Italic';
+  color: var(--secondary-color);
+}
+
+/* --- Text Align --- */
+.start-align {
+  text-align: start !important;
+}
+
+.center-align {
+  text-align: center !important;
+}
+
+.end-align {
+  text-align: end !important;
+}
+
+/* ------------------ */
+
+.progress {
+  background-color: var(--primary-color) !important;
+  border: none;
+}
+
+.progress span {
+  background-color: var(--secondary-color) !important;
+}
+
+.containers {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 2rem;
+  text-align: justify;
+  letter-spacing: 0.8px;
+}
+
+.flexbox {
+  display: flex !important;
+  height: 100vh;
+}
+
+.column {
+  flex-direction: column;
+  width: 50%;
+  min-height: 100vh;
+}
+
+.column-full {
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.self-center {
+  align-self: center;
+}
+
+/* Background Code */
+.code-wrapper {
+  position: relative;
+}
+
+code {
+  background-color: var(--primary-color) !important;
+  border-radius: 10px;
+  margin: 1rem 0;
+  line-height: 1.75em;
+}
+
+.code-block {
+  margin: 3rem 0 0 0;
+}
+
+
+/* ------------ Slide présentation ---------------- */
+.logo {
+  width: 100%
+}
+
+.logo_small {
+  width: 10rem;
+  position: absolute;
+  left: 0;
+  top: 3rem;
+}
+
+.intro-description {
+  font-size: 1em;
+  margin-top: 1rem;
+}
+
+.intro-presentation-title {
+  margin: 2rem 0 0;
+}
+
+.resize {
+  width: 100%;
+}
+
+
+/* ------------ Page layout ---------------- */
+
+
+
+
+.snapshot-diagram {
+  width: 85%;
+}
+
+.cost-diagram {
+  width: 90%;
+}
+
+.calculate .code-wrapper {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.MathJax_Display {
+  text-align: left !important;
+  margin: 0 0 0 2rem !important;
+}
+
+.math {
+  padding-bottom: 0;
+}
+
+.controls-arrow {
+  color: var(--primary-color);
+}
+
+/* ------------ List ---------------- */
+.presentation-list {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+  text-align: left;
+}
+
+.fragment.blur {
+  filter: blur(5px);
+}
+
+.fragment.blur.visible {
+  filter: none;
+}
+
+/* -- Custom moves --*/
+
+.highlight-title {
+  color: var(--extra-color-04);
+  font-size: 3rem;
+}
+
+.wave-01 {
+  position: absolute;
+  top: 5rem;
+  left: -20rem;
+  z-index: -10;
+  opacity: 0.08;
+}
+
+.wave-02 {
+  position: absolute;
+  top: -10rem;
+  left: -35rem;
+  z-index: -10;
+  opacity: 0.08;
+  width: 200%;
+}
+
+.dots-01 {
+  position: absolute;
+  top: 10rem;
+  left: -35rem;
+  z-index: -1;
+  opacity: 0.05;
+}
+
+.move-right {
+  left: initial;
+  top: -10rem;
+  right: -35rem;
+}
+
+.move-down {
+  right: initial;
+  left: 0rem;
+  top: initial;
+  bottom: -12rem;
+}
+
+.move-left {
+  top: -10rem;
+  left: -45rem;
+}
+
+/* .move-center {} */
+
+/* .in-view {
+  animation: dash-circle 4s ease-in-out alternate;
+} */
+
+.zoom-1 {
+  width: 100%;
+}
+
+.zoom-2 {
+  width: 125%;
+}
+
+.zoom-3 {
+  width: 150%;
+}
+
+.margin-top-bonus {
+  margin-top: 5rem;
+}
+
+.margin-top-minus {
+  margin-top: -5rem;
+}
+
+.margin-top-bonus-chapter {
+  margin-top: 15rem;
+}
+
+.margin-left-bonus {
+  margin-left: 5rem;
+}
+
+.padding-left-bonus {
+  padding-left: 6rem;
+}
+
+.line-height-bonus {
+  line-height: 2.5rem;
+}
+
+/* -- Line --*/
+.line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-color);
+}
+
+/*-- Diagram --*/
+.diagram{
+  width: 75%;
+  position: relative;
+  left: 0;
+}
+
+.diagram-resize {
+  width: 50%;
+}
+
+@media print {
+
+  a:link:after,
+  a:visited:after {
+    content: "";
+  }
+
+  a {
+    border: none;
+  }
+
+  .no-print,
+  .footer,
+  .actions,
+  .share,
+  nav,
+  .btn-back {
+    display: none !important;
+  }
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  .menutop {
+    padding: 0 0 2em;
+  }
+
+  header.menutop {
+    position: absolute;
+    background: none;
+  }
+
+  header.menutop .btn-back {
+    display: inline-block !important;
+  }
+
+  body {
+    font-size: 84.5%;
+  }
+
+  .text p,
+  .text ul ol {
+    margin-left: calc(30% - 2rem);
+  }
+
+  .text>h2 {
+    width: 25%;
+  }
+
+  body,
+  a,
+  .btn-back,
+  h1,
+  .text h1,
+  .text h2,
+  .text h3,
+  .text h4,
+  .text strong {
+    color: #000 !important;
+  }
+
+  main.main-pages,
+  .container,
+  .columns {
+    padding: 0;
+  }
+}
